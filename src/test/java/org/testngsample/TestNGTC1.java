@@ -13,47 +13,13 @@ import org.testng.annotations.Test;
 
 public class TestNGTC1 {
 	
-	
-	public WebDriver driver;
-@BeforeClass
-	
-	private WebDriver launchBroswer() {
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\mselva\\workspace\\MavenProjectTestcases\\driver\\chromedriver.exe");
-
-	driver=new ChromeDriver();
-	
-	return driver;
-	
-	}
-	
-	@AfterClass
-	private void closeBrowser() {
-	
-		driver.quit();
-
-	}
-	
-	@BeforeMethod
-	private void startTime() {
-    Date d=new Date();
-    System.out.println(d);
-
-	}
-	
-	@AfterMethod
-	private void endTime() {
-	Date d=new Date();
-	System.out.println(d);
-	
-	}
-	
-	@Test
-	private void tc1() {
-	
-		driver.findElement(By.id("email")).sendKeys("selvam");
-		driver.findElement(By.id("pass")).sendKeys("selvam");
-		driver.findElement(By.name("login"));
+	int a=1, b=2;
+	int c= a+b;
 	
 	
 
-}}
+	}
+	
+
+	
+
